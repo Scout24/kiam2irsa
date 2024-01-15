@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"sync"
 
-	"github.com/dfds/kiam2irsa/pkg/logging"
+	"github.com/Scout24/kiam2irsa/pkg/logging"
 	"github.com/spf13/cobra"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

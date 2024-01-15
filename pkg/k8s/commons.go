@@ -3,7 +3,7 @@ package k8s
 import (
 	"strings"
 
-	"github.com/dfds/kiam2irsa/pkg/logging"
+	"github.com/Scout24/kiam2irsa/pkg/logging"
 	"github.com/spf13/cobra"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/clientcmd"

@@ -2,7 +2,7 @@ package k8s
 
 import (
 	"context"
-	"github.com/dfds/kiam2irsa/pkg/logging"
+	"github.com/Scout24/kiam2irsa/pkg/logging"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 	"regexp"

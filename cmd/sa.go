@@ -2,8 +2,8 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/dfds/kiam2irsa/pkg/k8s"
-	"github.com/dfds/kiam2irsa/pkg/logging"
+	"github.com/Scout24/kiam2irsa/pkg/k8s"
+	"github.com/Scout24/kiam2irsa/pkg/logging"
 	"os"
 
 	"github.com/spf13/cobra"

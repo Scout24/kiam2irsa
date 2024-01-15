@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/dfds/kiam2irsa/pkg/k8s"
-	"github.com/dfds/kiam2irsa/pkg/logging"
+	"github.com/Scout24/kiam2irsa/pkg/k8s"
+	"github.com/Scout24/kiam2irsa/pkg/logging"
 
 	"github.com/spf13/cobra"
 )
