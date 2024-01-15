@@ -59,7 +59,6 @@ func CheckAllServiceAccounts(cmd *cobra.Command) {
 
 func HasServiceAccountAnnotationForIRSA(name string, namespace string, saList *v1.ServiceAccountList) (bool, error) {
 	hasRoleArn := false
-	hasRegionalSts := false
 
 	for _, sa := range saList.Items {
 		if name == sa.Name && namespace == sa.Namespace {
@@ -68,14 +67,11 @@ func HasServiceAccountAnnotationForIRSA(name string, namespace string, saList *v
 				if key == RoleArnAnnotationName && matchVal {
 					hasRoleArn = true
 				}
-				if key == RegionalStsAnnotationName && val == RegionalStsAnnotationValue {
-					hasRegionalSts = true
-				}
 			}
 		}
 	}
 
-	if hasRoleArn && hasRegionalSts {
+	if hasRoleArn {
 		return true, nil
 	}
 	return false, nil
